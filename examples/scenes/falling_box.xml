@@ -1,0 +1,21 @@
+
+<mujoco model="contactforge_falling_box">
+  <option timestep="0.001"
+          gravity="0 0 -9.81"
+          integrator="implicitfast"/>
+
+  <worldbody>
+    <geom name="ground"
+          type="plane"
+          size="2 2 0.1"/>
+
+    <body name="falling_box" pos="0 0 0.3">
+      <freejoint/>
+      <geom name="box_collision"
+            type="box"
+            size="0.05 0.05 0.05"
+            mass="0.5"
+            solref="0.01 1"/>
+    </body>
+  </worldbody>
+</mujoco>

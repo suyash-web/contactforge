@@ -1,0 +1,28 @@
+
+<mujoco model="contactforge_test">
+  <worldbody>
+
+    <body name="valid_link" pos="0 0 1">
+      <freejoint/>
+      <inertial
+        pos="0 0 0"
+        mass="2.0"
+        diaginertia="0.04 0.05 0.06"/>
+      <geom type="box" size="0.1 0.15 0.2"/>
+    </body>
+
+    <body name="invalid_link" pos="1 0 1">
+      <inertial
+        pos="0 0 0"
+        mass="1.0"
+        diaginertia="0.01 0.01 1.0"/>
+      <geom type="box" size="0.1 0.1 0.1"/>
+    </body>
+
+    <body name="geometry_only" pos="2 0 1">
+      <freejoint/>
+      <geom type="sphere" size="0.1" mass="0.5"/>
+    </body>
+
+  </worldbody>
+</mujoco>

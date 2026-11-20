@@ -1,0 +1,17 @@
+
+{
+  "stage_motor": [
+    {
+      "time_s": 0.0,
+      "value": 0.0
+    },
+    {
+      "time_s": 0.2,
+      "value": 0.015
+    },
+    {
+      "time_s": 0.4,
+      "value": 0.04
+    }
+  ]
+}
